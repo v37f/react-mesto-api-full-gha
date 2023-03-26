@@ -35,3 +35,9 @@
 * Backend https://api.mesto.frontend.vtsf.nomoredomains.work
 
 * Адрес репозитория: https://github.com/v37f/react-mesto-api-full-gha.git
+
+## Развертывание проекта
+
+Ветка `main` настроена для развертывания проекта локально
+
+Ветка `deploy` настроена для развертывания проекта на удаленном сервере
