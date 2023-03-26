@@ -18,6 +18,11 @@ app.use(limiter);
 app.use(cookieParser());
 app.use(express.json());
 app.use(requestLogger);
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 app.use(routes);
 app.use(errorLogger);
 app.use(errors());
