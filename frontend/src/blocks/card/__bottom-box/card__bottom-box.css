@@ -1,0 +1,6 @@
+.card__bottom-box {
+  padding: 22px 21px 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

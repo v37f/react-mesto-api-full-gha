@@ -1,0 +1,11 @@
+.topbar__profile-email {
+  padding: 0;
+  margin: 0 0 18px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  min-height: 22px;
+  text-align: center;
+
+  color: #ffffff;
+}

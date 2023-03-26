@@ -1,0 +1,20 @@
+.form__input {
+  margin: 0;
+  padding: 0 0 13px 0;
+  height: 27px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.form__input:focus {
+  outline: 1px solid #000;
+}
+

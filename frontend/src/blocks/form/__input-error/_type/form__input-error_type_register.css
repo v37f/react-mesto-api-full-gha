@@ -1,0 +1,11 @@
+.form__input-error_type_register:last-of-type {
+    /* нижний отступ равен расстоянию от нижнего края инпута до верхнего края кнопки(48px)
+     минус (минимальная высота текста ошибки + верхний отступ текста ошибки) */
+    margin:5px 0 calc(216px - (24px + 5px));
+  }
+
+  @media screen and (max-width: 425px) {
+    .form__input-error_type_register:last-of-type {
+      margin:5px 0 calc(173px - (24px + 5px));
+    }
+  }

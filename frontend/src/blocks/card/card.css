@@ -1,0 +1,12 @@
+.card {
+  width: 282px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .4s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px 5px grey;
+}

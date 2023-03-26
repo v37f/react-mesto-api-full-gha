@@ -1,0 +1,22 @@
+.popup__title {
+  margin: 0 0 48px 0;
+  /* в макете нижний отступ равен 54px, line-height заголовка 29px, но при этом высота(height) 23px,
+  если намерено не ограничивать высоту заголовка(т.к. это является плохим решением для текстового элемента),
+  его высота(height) будет равна line-height(29px) и общая высота всплывающего окна также увеличится до 336px,
+  поэтому для чтобы высота всплывающего окна соотвествовала макету(330px) уменьшаем нижний отступ заголовка на
+  29px - 23px = 6px */
+  padding: 0;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  max-width: 330px;
+}
+
+@media screen and (max-width: 425px) {
+  .popup__title {
+    margin: 0 0 75px 0;
+    max-width: 238px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

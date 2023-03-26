@@ -1,0 +1,33 @@
+.profile__info {
+  display: grid;
+  grid-template-columns: 294px 24px;
+  grid-template-rows: 39px 18px;
+  column-gap: 18px;
+  row-gap: 16px;
+  align-items: start;
+  align-self: end;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__info {
+    margin-bottom: 36px;
+    /* чтобы выставить имя по центру сделаем грид-сетку симметричной*/
+    grid-template-columns: 24px 294px 24px;
+    grid-template-areas:
+    '. profile-name edit-button'
+    'description description description';
+    align-self: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .profile__info {
+    grid-template-columns: 37px 189px 37px;
+    grid-template-rows: 26px 14px;
+    column-gap: 10px;
+    row-gap: 14px;
+  }
+}
+

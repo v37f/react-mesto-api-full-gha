@@ -1,0 +1,33 @@
+.footer {
+  margin: 0 auto;
+  padding: 67px 0 60px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  max-width: 880px;
+  width: calc(100% - (200px * 2));
+  min-width: 642px;
+  /* чтобы футер не сжимался */
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    max-width: 642px;
+    width: calc(100% - (100px * 2));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 48px 0 36px;
+    min-width: calc(425px - (19px * 2));
+    width: calc(100% - (50px * 2));
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    width: calc(100% - (19px *2));
+    min-width: calc(320px - (19px * 2));
+  }
+}

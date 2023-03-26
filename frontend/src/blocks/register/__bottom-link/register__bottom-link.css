@@ -1,0 +1,21 @@
+.register__bottom-link {
+  padding-top: 15px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #fff;
+  transition: opacity .4s ease;
+  text-align: center;
+}
+
+.register__bottom-link:hover {
+  opacity: .6;
+}
+
+@media screen and (max-width: 425px) {
+  .register__bottom-link {
+    padding-top: 20px;
+  }
+}

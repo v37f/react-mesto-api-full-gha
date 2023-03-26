@@ -1,0 +1,16 @@
+.form__button_type_register {
+  background-color: #fff;
+  color: #000;
+}
+
+.form__button_type_register:hover:not([disabled]) {
+  opacity: .85;
+}
+
+.form__button_type_register:disabled {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  opacity: .6;
+  cursor: default;
+}

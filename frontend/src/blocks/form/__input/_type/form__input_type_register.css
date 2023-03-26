@@ -1,0 +1,13 @@
+.form__input_type_register {
+  background-color: #000;
+  color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+.form__input_type_register::placeholder {
+  color: #ccc;
+}
+
+.form__input_type_register:focus {
+  outline: none;
+}

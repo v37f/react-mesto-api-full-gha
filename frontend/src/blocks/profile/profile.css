@@ -1,0 +1,11 @@
+.profile {
+  padding-top: 40px;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    padding-top: 42px;
+  }
+}

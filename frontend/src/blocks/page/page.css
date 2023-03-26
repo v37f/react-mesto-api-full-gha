@@ -1,0 +1,10 @@
+.page {
+  background-color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,39 @@
+.header {
+  margin: 0 auto;
+  padding: 45px 0 calc(41px - 1px) 0;
+  /* из нижнего паддинга вычитаем высоту нижней рамки, чтобы общая высота блока соотвествовала макету,
+  box-sizing: border-box в данном случае не сработает, так как для этого придется задавать фиксированное
+  значение высоты блока */
+  border-bottom: 1px solid rgba(84, 84, 84, .7);
+  max-width: 880px;
+  width: calc(100% - (200px * 2));
+  min-width: 642px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    max-width: 642px;
+    width: calc(100% - (100px * 2));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    min-width: 320px;
+    width: calc(100% - (50px * 2));
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    padding: 28px 30px calc(31.6px - 1px);
+    width: 100%;
+  }
+}
