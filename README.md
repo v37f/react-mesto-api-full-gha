@@ -28,13 +28,13 @@
 
 Проект размещен на Яндекс.Облаке и доступен по следующим адресам:
 
-* IP-адрес 84.201.155.33
+IP 84.201.155.33
 
-* Frontend https://mesto.frontend.vtsf.nomoredomains.work
+Frontend https://mesto.frontend.vtsf.nomoredomains.work
 
-* Backend https://api.mesto.frontend.vtsf.nomoredomains.work
+Backend https://api.mesto.frontend.vtsf.nomoredomains.work
 
-* Адрес репозитория: https://github.com/v37f/react-mesto-api-full-gha.git
+Адрес репозитория: https://github.com/v37f/react-mesto-api-full-gha.git
 
 ## Развертывание проекта
 
