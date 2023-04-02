@@ -221,6 +221,7 @@ function App() {
     setIsEditAvatarPopupOpen(false);
     setIsConfirmationPopupOpen(false)
     setSelectedCard(null);
+    setDeletingCard(null);
   }
 
   function handleCardLike(card) {
