@@ -43,7 +43,7 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike
         <ul className="cards__container">
           {cards.map(card => (
             <Card card={card} onCardClick={onCardClick} onCardLike={onCardLike} onCardDelete={onCardDelete} key={card._id} />
-          ))}
+          )).reverse()}
         </ul>
       </section>
       {/* конец блока cards */}
