@@ -11,3 +11,11 @@
 .form__input_type_register:focus {
   outline: none;
 }
+
+.form__input_type_register:-webkit-autofill,
+.form__input_type_register:-webkit-autofill:hover, 
+.form__input_type_register:-webkit-autofill:focus, 
+.form__input_type_register:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #000 inset;
+    -webkit-text-fill-color: #fff;
+}
