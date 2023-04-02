@@ -6,7 +6,7 @@ const ForbiddenError = require('../errors/forbidden-error');
 const Card = require('../models/card');
 
 // GET /cards
-module.exports.getCards = (req, res, next) => {
+module.exports.getCards = (_req, res, next) => {
   Card.find({})
     .populate(['owner', 'likes'])
     .then((cards) => res.send(cards))
@@ -38,10 +38,6 @@ module.exports.deleteCard = (req, res, next) => {
       if (card.owner.toString() !== req.user._id) {
         throw new ForbiddenError('Нельзя удалить чужую карточку');
       }
-      // метод remove() будет удален в 7 версии mongoose, и хотя сейчас
-      // в проекте применяется 6 версия, использование deleteOne() (который
-      // есть и в 6 и в 7 версии mongoose) вместо remove() позволит избежать
-      // потенциальныйх проблем в будущем
       return Card.deleteOne(card)
         .then(() => res.send({ message: 'Пост удалён' }));
     })

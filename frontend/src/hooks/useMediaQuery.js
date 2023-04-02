@@ -1,5 +1,3 @@
-// хук для работы с media query
-
 import { useEffect, useState } from "react";
 
 export function useMediaQuery(query) {

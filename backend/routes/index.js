@@ -12,7 +12,7 @@ router.post('/signin', validateAuthInfo, login);
 router.use(auth);
 router.use('/users', userRouter);
 router.use('/cards', cardRouter);
-router.use((req, res, next) => {
+router.use((_req, _res, next) => {
   next(new NotFoundError('Страница не найдена'));
 });
 

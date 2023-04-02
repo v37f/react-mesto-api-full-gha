@@ -8,8 +8,6 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike
 
   return (
     <main className="content">
-
-      {/* начало блока profile */}
       <section className="profile">
         <div className="profile__container">
           <div className="profile__avatar" onClick={onEditAvatar}>
@@ -36,9 +34,6 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike
           </button>
         </div>
       </section>
-      {/* конец блока profile */}
-
-      {/* начало блока cards */}
       <section className="cards" aria-label="Карточки мест">
         <ul className="cards__container">
           {cards.map(card => (
@@ -46,7 +41,6 @@ function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardClick, onCardLike
           )).reverse()}
         </ul>
       </section>
-      {/* конец блока cards */}
     </main>
   );
 }

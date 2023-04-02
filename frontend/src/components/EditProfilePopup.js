@@ -4,12 +4,7 @@ import { CurrentUserContext } from "../contexts/CurrentUserContext";
 import { useFormAndValidation } from "../hooks/useFormAndValidation";
 
 function EditProfilePopup({ isOpen, onClose, onUpdateUser }) {
-  
-  // Подписка на контекст
   const currentUser = useContext(CurrentUserContext);
-  // После загрузки текущего пользователя из API
-  // его данные будут использованы в управляемых компонентах.
-  
   const [buttonText, setButtonText] = useState('Сохранить');
   const { values, handleChange, errors, isValid, resetForm, setValues, setIsValid } = useFormAndValidation({
     userName: '',

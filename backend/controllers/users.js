@@ -10,7 +10,7 @@ const { removePassword } = require('../utils/utils');
 const User = require('../models/user');
 
 // GET /users
-module.exports.getUsers = (req, res, next) => {
+module.exports.getUsers = (_req, res, next) => {
   User.find({})
     .then((users) => res.send(users))
     .catch(next);
