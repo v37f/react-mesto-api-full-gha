@@ -72,7 +72,7 @@ function App() {
       .then(() => {
         api.getInitialCards()
         .then(initialCards => {
-          setCards(...cards, initialCards);
+          setCards(cards => [...cards, ...initialCards]);
         })
         .catch((error) => {
           console.log('Не удалось получить данные карточек от сервера');
