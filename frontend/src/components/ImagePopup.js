@@ -27,7 +27,7 @@ function ImagePopup({ card, onClose }) {
   }, [card]);
 
   return (
-    <div className={"popup popup_type_card" + (card && " popup_opened")} onClick={closeByClickingOverlay}>
+    <div className={"popup popup_type_card" + (card ? " popup_opened" : "")} onClick={closeByClickingOverlay}>
       <div className="popup__container popup__container_type_image">
         <button className="popup__close" type="button" aria-label="Закрыть окно" title="Закрыть" onClick={onClose}></button>
         <h2 className="popup__image-title">{currentCard?.name}</h2>

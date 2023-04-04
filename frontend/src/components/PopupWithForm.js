@@ -9,7 +9,7 @@ function PopupWithForm({ title, name, isOpen, onClose, buttonText, children, onS
   }
 
   return (
-    <div className={`popup popup_type_${name}` + (isOpen && " popup_opened")} onClick={closeByClickingOverlay}>
+    <div className={`popup popup_type_${name}` + (isOpen ? " popup_opened" : "")} onClick={closeByClickingOverlay}>
       <div className="popup__container popup__container_type_form">
         <button className="popup__close" type="button" aria-label="Закрыть окно" title="Закрыть" onClick={onClose}></button>
         <h2 className="popup__title">{`${title}`}</h2>
