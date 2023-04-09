@@ -36,6 +36,13 @@ Backend https://api.mesto.frontend.vtsf.nomoredomains.work
 
 Адрес репозитория: https://github.com/v37f/react-mesto-api-full-gha.git
 
+## Макеты 
+
+Макеты проекта в Figma:
+
+* [Регистрация и логин](https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/JavaScript.-Sprint-12?node-id=0-1)
+* [Профиль и карточки](https://www.figma.com/file/PSdQFRHoxXJFs2FH8IXViF/JavaScript.-Sprint-9?node-id=0-1)
+
 ## Развертывание проекта
 
 Ветка `main` настроена для развертывания проекта локально
